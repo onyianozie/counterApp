@@ -9,7 +9,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
 *{
-    margin: 0 auto;
+    margin: 0 auto; 
 }
         body{
             margin: 0;
@@ -37,7 +37,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
             text-align: center;
             
         }
-        .container span{
+        .container p{
             color: cornsilk;
             font-size: 70px;
         }
@@ -46,7 +46,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
             padding: 80px 0;
             color: cornsilk;
         }
-        span{
+        p{
             text-align: center;
             
         }
@@ -66,7 +66,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
             color: cornsilk;
         }
 
-        .btn:hover{
+        button:hover{
             background: sienna;
             color: cornsilk;
         }

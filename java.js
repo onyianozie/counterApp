@@ -1,30 +1,25 @@
-let count = 0;
 
-const value = document.querySelector("#value");
-const btns = document.querySelectorAll("#.btn");
+const incrementor = document.querySelector("#inc");
+const decrementor = document.querySelector("#dec");
+const counterDisplay = document.querySelector("#counter");
 
-btns.forEach(function(btn){
-    btn.addzeventListener('click', function(e){
-        const styles = e.currentTarget.classList;
-        if(styles.contains('remove')){
-            count--;
-        }
-        else if (styles.contains('increase')){
-            counte++;
-        }
-        else{count = 0}
+let counter = 0;
 
-        if(count > 0){
-            value.style.color ='green';
-        }
+incrementor.addEventListener("click",() =>{
+    counter += 1;
+    counterDisplay.textContent = counter;
 
-        if (count < 0){
-            value.style.color = 'red';
-        }
-        if (count === 0){
-            value.style.color ="black"
-        }
-        value.textContent = count;
-    })
-    b
-});
+})
+decrementor.addEventListener("click",() =>{
+    counter -= 1;
+    counterDisplay.textContent = counter;
+
+})
+
+//df23e141e5849f2396ad851c2744c80c
+
+
+// 1. .forEach()
+// 2. .map()
+// 3. .filter()
+
